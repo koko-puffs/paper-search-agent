@@ -1,7 +1,5 @@
 # Paper Search Agent
 
-This is boilerplate code for a customer feedback analysis agent.
-
 ## Setup
 
 Install the Python dependencies.
