@@ -2,7 +2,7 @@ LLM_CONFIG = {
     "config_list": [
         {
             "model": "open-mistral-nemo",
-            "api_key": "lfh9ETOGnFwlMJzkeNZKE0DeIEDQ0k7X",
+            "api_key": "xnxpECtD1wfwieBuLd7qEHbnL9gR7Rzw",
             "api_type": "mistral",
             "api_rate_limit": 0.25,
             "repeat_penalty": 1.1,
