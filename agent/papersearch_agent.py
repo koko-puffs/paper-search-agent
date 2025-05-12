@@ -18,7 +18,11 @@ paper_search_tool_schema = {
                     "enum": ["in", "before", "after"]
                 },
                 "min_citations": {"type": "integer", "description": "The minimum number of citations a paper should have."},
-                "limit": {"type": "integer", "description": "Maximum number of papers to return, defaults to 10 if not specified."}
+                "limit": {
+                    "type": "integer",       
+                    "description": "Maximum number of papers to return, defaults to 5 if not specified.",
+                    "default": 5
+                }
             },
             "required": ["topic"],
         },
@@ -35,7 +39,7 @@ def create_paper_search_agent() -> autogen.ConversableAgent:
                        "'Find a research paper on [topic] that was published [in/before/after] [year] and has [number of citations] citations.' "
                        "Extract the topic, year, year operator, and minimum citations from the user's request "
                        "and use the 'search_papers' tool. "
-                       "If 'limit' is not specified by the user, default to 10 results. "
+                       "If 'limit' is not specified by the user, default to 5 results. "
                        "Present the found papers clearly, including title, authors, year, citations, and URL. "
                        "After providing all information and a list of papers (if any are found), or stating that no papers were found, end your response with the word TERMINATE.",
         llm_config=current_llm_config,

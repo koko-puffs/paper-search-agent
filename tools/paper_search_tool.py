@@ -6,7 +6,7 @@ def search_papers(
     year: Optional[int] = None,
     year_operator: Optional[str] = None,
     min_citations: Optional[int] = None,
-    limit: int = 10,
+    limit: int = 5,
 ) -> List[Dict[str, Any]]:
     sch = SemanticScholar()
     query = topic
