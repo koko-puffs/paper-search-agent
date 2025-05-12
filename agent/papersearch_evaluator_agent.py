@@ -1,4 +1,4 @@
-import autogen
+import autogen # type: ignore
 import json
 import time
 from agent.papersearch_agent import create_paper_search_agent, create_user_proxy_agent

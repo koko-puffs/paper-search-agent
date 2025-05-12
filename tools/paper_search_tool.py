@@ -1,4 +1,4 @@
-from semanticscholar import SemanticScholar
+from semanticscholar import SemanticScholar # type: ignore
 from typing import List, Dict, Any, Optional
 
 def search_papers(

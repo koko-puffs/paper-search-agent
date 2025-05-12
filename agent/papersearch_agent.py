@@ -1,4 +1,4 @@
-import autogen
+import autogen # type: ignore
 from tools.paper_search_tool import search_papers
 from config import LLM_CONFIG
 
